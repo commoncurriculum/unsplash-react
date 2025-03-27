@@ -1,11 +1,11 @@
 import React from "react"
-import ReactDOM from "react-dom"
+import ReactDOM from "react-dom/client"
 import UnsplashReact, {
-  withDefaultProps,
   Base64Uploader,
-  ExternalLocationUploader,
   BlobUploader,
+  ExternalLocationUploader,
   InsertIntoApplicationUploader,
+  withDefaultProps,
 } from "../src/"
 
 function Base64Example() {
@@ -169,4 +169,5 @@ class ExampleComponent extends React.Component {
   }
 }
 
-ReactDOM.render(<ExampleComponent />, document.getElementById("root"))
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(<ExampleComponent />)
