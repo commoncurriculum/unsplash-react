@@ -1,5 +1,5 @@
-import React from "react"
 import propTypes from "prop-types"
+import React from "react"
 const { shape, string, func } = propTypes
 
 export default class Base64Uploader extends React.Component {
@@ -17,7 +17,7 @@ export default class Base64Uploader extends React.Component {
 
   state = { blob: null }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     const prevPhoto = this.props.unsplashPhoto
     const nextPhoto = nextProps.unsplashPhoto
     if ((prevPhoto && prevPhoto.id) === (nextPhoto && nextPhoto.id)) return

@@ -670,8 +670,8 @@ var BlobUploader = function (_React$Component) {
   }
 
   createClass(BlobUploader, [{
-    key: "componentWillReceiveProps",
-    value: function componentWillReceiveProps(nextProps) {
+    key: "UNSAFE_componentWillReceiveProps",
+    value: function UNSAFE_componentWillReceiveProps(nextProps) {
       var prevPhoto = this.props.unsplashPhoto;
       var nextPhoto = nextProps.unsplashPhoto;
       if ((prevPhoto && prevPhoto.id) === (nextPhoto && nextPhoto.id)) return;
@@ -724,8 +724,8 @@ var DataTransferUploader = function (_React$Component) {
   }
 
   createClass(DataTransferUploader, [{
-    key: "componentWillReceiveProps",
-    value: function componentWillReceiveProps(nextProps) {
+    key: "UNSAFE_componentWillReceiveProps",
+    value: function UNSAFE_componentWillReceiveProps(nextProps) {
       var _this2 = this;
 
       var prevPhoto = this.props.unsplashPhoto;
@@ -802,8 +802,8 @@ var Base64Uploader = function (_React$Component) {
   }
 
   createClass(Base64Uploader, [{
-    key: "componentWillReceiveProps",
-    value: function componentWillReceiveProps(nextProps) {
+    key: "UNSAFE_componentWillReceiveProps",
+    value: function UNSAFE_componentWillReceiveProps(nextProps) {
       var _this2 = this;
 
       var prevPhoto = this.props.unsplashPhoto;
@@ -935,8 +935,8 @@ var InsertIntoApplicationUploader = function (_React$Component) {
   }
 
   createClass(InsertIntoApplicationUploader, [{
-    key: "componentWillReceiveProps",
-    value: function componentWillReceiveProps(nextProps) {
+    key: "UNSAFE_componentWillReceiveProps",
+    value: function UNSAFE_componentWillReceiveProps(nextProps) {
       var prevPhoto = this.props.unsplashPhoto;
       var nextPhoto = nextProps.unsplashPhoto;
       if ((prevPhoto && prevPhoto.id) === (nextPhoto && nextPhoto.id)) return;
